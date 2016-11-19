@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+node_js:
+  - 'node'
+
+branches:
+  only:
+    - develop
+
+install:
+  - npm install
+
+script:
+  - hexo generate
+
+after_success:
+  - cd ./public
+  - git init
+  - git config user.name "oel-leo"
+  - git config user.email "oelleo@protonmail.com"
+  - git add -A
+  - git commit -m "Travis CI"
+  - git push --force "https://${github_token}@github.com/oel-leo/oel-leo.github.io.git" master

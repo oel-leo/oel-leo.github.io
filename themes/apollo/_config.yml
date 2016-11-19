@@ -1,0 +1,28 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    Weibo:
+    GitHub: https://github.com/oel-leo
+    Rss: /atom.xml
+
+favicon: /favicon.png
+logo: /favicon.png
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
+
+# Analytics
+# google-analytics:
+ga: UA-65933410-1
+
+# Copyright Infomation
+startyear: 2016
+
+# Archive
+archive_generator:
+  per_page: 0
+  yearly: false
+  monthly: false
+  daily: false
